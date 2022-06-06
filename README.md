@@ -4,9 +4,8 @@
 
 ### 如何使用它?
 
-```shell
->>> pip install BeautifulReport
-```
+把BeautifulReport目录下的文件，拷贝到venv\Lib\site-packages目录下
+
 
 ```python
 
@@ -80,3 +79,5 @@ class UnittestCaseSecond(unittest.TestCase):
 ![image](http://mocobk.test.upcdn.net/image/img20190325124850.jpg)
 
 感谢原作者 [TesterlifeRaymond](https://github.com/TesterlifeRaymond/BeautifulReport) 的代码贡献，本人在原基础上修复了部分bug并增加了主题样式的自定义
+感谢作者 [mocobk](https://github.com/mocobk/BeautifulReport) 的代码。
+在使用过程中遇到截图问题，简单综合把mocobk部分代码还原会TesterlifeRaymond。
