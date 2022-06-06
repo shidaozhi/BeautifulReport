@@ -4,7 +4,7 @@
 
 ### 如何使用它?
 
-把BeautifulReport目录下的文件，拷贝到venv\Lib\site-packages目录下
+把BeautifulReport目录下template文件夹和BeautifulReport.py，拷贝到venv\Lib\site-packages目录下
 
 
 ```python
