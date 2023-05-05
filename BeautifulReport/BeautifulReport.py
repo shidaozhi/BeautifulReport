@@ -64,8 +64,9 @@ SITE_PAKAGE_PATH = get_python_lib()
 
 class PATH:
     """ all file PATH meta """
-    template_path = os.path.join(os.path.dirname(__file__), 'template')
-    config_tmp_path = os.path.join(template_path, 'template.html')
+    # 获取当前文件所在目录的父目录的绝对路径
+    parent_directory_path = os.path.join(os.path.dirname(__file__), 'template')
+    config_tmp_path = os.path.join(parent_directory_path, 'template.html')
 
 
 class MakeResultJson:
@@ -398,7 +399,7 @@ class BeautifulReport(ReportTestResult, PATH):
             return template
 
         template_path = self.config_tmp_path
-        with open(os.path.join(self.template_path, theme + '.json'), 'r') as theme:
+        with open(os.path.join(self.parent_directory_path, theme + '.json'), 'r') as theme:
             render_params = {
                 **json.load(theme),
                 'resultData': json.dumps(self.fields, ensure_ascii=False, indent=4)
